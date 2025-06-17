@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KimO - Kişi Yönetimi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>KimO</h1>
+  <form id="kisiForm">
+    <input type="text" id="isim" placeholder="İsim" required>
+    <input type="text" id="kimlik" placeholder="11 Haneli Kimlik No" maxlength="11" required>
+    <input type="text" id="adres" placeholder="Adres" required>
+    <button type="submit">Ekle</button>
+  </form>
+
+  <input type="text" id="arama" placeholder="İsim, Kimlik veya Adres ile Ara...">
+  <button onclick="ara()">Ara</button>
+  <button onclick="temizle()">Temizle</button>
+
+  <ul id="liste"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
